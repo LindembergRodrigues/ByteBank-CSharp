@@ -19,11 +19,23 @@ namespace ByteBank
             diretor.Nome = "Lindemberg Rodrigues";
             diretor.Senha = "12345";
 
+            GerenteDeConta GConta = new GerenteDeConta("14785236989");
+            GConta.Senha = "7548";
+
             Console.WriteLine();
             sistemasInterno.Logar(diretor, "1524");
             Console.WriteLine();   
             sistemasInterno.Logar(diretor,diretor.Senha);
+
+
+            Console.WriteLine();
+
+            sistemasInterno.Logar(GConta, "1524");
+            Console.WriteLine();
+            sistemasInterno.Logar(GConta, GConta.Senha);
             Console.ReadLine();
+
+
         }
 
         public static void CalcularBonificacao() 
