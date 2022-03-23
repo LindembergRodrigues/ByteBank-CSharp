@@ -9,9 +9,9 @@ namespace ByteBank.Sistemas
 {
     internal class SistemaInterno
     {
-        public bool Logar(Funcionario diretor, String senha)
+        public bool Logar(Autenticavel autenticavel, String senha)
         {
-            bool userAutenticador = diretor.Autenticar(senha);
+            bool userAutenticador = autenticavel.Autenticar(senha);
             if (userAutenticador)
             {
                 Console.WriteLine("<BEM VINDO AO SISTEMA DA BYTEBANK>");
@@ -20,16 +20,7 @@ namespace ByteBank.Sistemas
             Console.WriteLine("Não autenticado!");
             return false;
         }
-        public bool Logar(GerenteDeConta GConta, String senha)
-        {
-            bool userAutenticador = GConta.Autenticar(senha);
-            if (userAutenticador)
-            {
-                Console.WriteLine(" BEM VINDO AO SISTEMA DA BYTEBANK ");
-                return true;
-            }
-            return false;
-        }
+        
 
 
     }
