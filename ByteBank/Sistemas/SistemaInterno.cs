@@ -14,7 +14,7 @@ namespace ByteBank.Sistemas
             bool userAutenticador = autenticavel.Autenticar(senha);
             if (userAutenticador)
             {
-                Console.WriteLine("<BEM VINDO AO SISTEMA DA BYTEBANK>");
+                Console.WriteLine("Autenticado!");
                 return true;
             }
             Console.WriteLine("Não autenticado!");

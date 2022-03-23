@@ -14,8 +14,6 @@ namespace ByteBank.Funcionarios
             Console.WriteLine("Criando DIRETOR");
         }
 
-        public string Senha { get; set; }
-
         public override void AumentarSalario()
         {
             Salario *= 1.15;

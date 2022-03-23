@@ -2,14 +2,12 @@
 
 namespace ByteBank.Funcionarios
 {
-    public class GerenteDeConta : Funcionario, Autenticavel
+    public class GerenteDeConta : FuncionarioAutenticavel
     {
         
         public GerenteDeConta(string cpf) : base(4000, cpf)
         {
         }
-
-        public string Senha { get; set ; }
 
         public override void AumentarSalario()
         {

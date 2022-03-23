@@ -16,26 +16,32 @@ namespace ByteBank
             SistemaInterno sistemasInterno = new SistemaInterno();
 
             Diretor diretor = new Diretor("123456789-09");
-            diretor.Nome = "Lindemberg Rodrigues";
             diretor.Senha = "12345";
-
+            Console.WriteLine("okok" == "okok");
             GerenteDeConta GConta = new GerenteDeConta("14785236989");
             GConta.Senha = "7548";
 
-            Console.WriteLine();
-            sistemasInterno.Logar(diretor, "1524");
-            Console.WriteLine();   
+            Console.WriteLine("\nDIRETOR");
+            
+            sistemasInterno.Logar(diretor, "1524"); 
             sistemasInterno.Logar(diretor,diretor.Senha);
 
 
-            Console.WriteLine();
+            Console.WriteLine("\nGERENTE COMERCIAL");
 
             sistemasInterno.Logar(GConta, "1524");
-            Console.WriteLine();
             sistemasInterno.Logar(GConta, GConta.Senha);
+
+
+            ParceiroComercial PComercial = new ParceiroComercial();
+            PComercial.Senha = "26538";
+
+            Console.WriteLine("\nPARCEIRO COMERCIAL");
+
+            sistemasInterno.Logar(PComercial, "26538");
+            sistemasInterno.Logar(PComercial, "265385");
+
             Console.ReadLine();
-
-
         }
 
         public static void CalcularBonificacao() 
