@@ -12,12 +12,16 @@ namespace ByteBank.Funcionarios
         {
         }
 
-        public override void AumentarSalario()
+        public string CPF { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Salario { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Nome { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public void AumentarSalario()
         {
             Salario *= 1.1;
         }
 
-        public override double GetBonificacao()
+        public double GetBonificacao()
         {
             return Salario * 0.2;
         }
