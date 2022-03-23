@@ -9,7 +9,6 @@ namespace ByteBank.Sistemas
 {
     public interface Autenticavel 
     {        
-        String Senha { get; set; }
         bool Autenticar(String senha);
     }
 }
